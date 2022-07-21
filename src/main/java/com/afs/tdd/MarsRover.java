@@ -15,7 +15,7 @@ public class MarsRover {
         this.direction = direction;
     }
 
-    public void ExecuteSingleCommand(String command) {
+    private void ExecuteSingleCommand(String command) {
         if (command.equals("M")) {
             Move();
         } else if (command.equals("L")) {
@@ -54,7 +54,7 @@ public class MarsRover {
         commandsList.forEach(command ->ExecuteSingleCommand(command));
     }
 
-    public void Move() {
+    private void Move() {
         if (direction.equals("N")) {
             locationY += 1;
         } else if (direction.equals("S")) {
