@@ -62,6 +62,9 @@ public class MarsRover {
         else if(direction.equals("E")){
             locationX+=1;
         }
+        else{
+            locationX-=1;
+        }
     }
 
     public String getDirection() {
