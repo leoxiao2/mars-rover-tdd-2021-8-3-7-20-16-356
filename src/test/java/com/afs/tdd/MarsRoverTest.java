@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class MarsRoverTest {
     @Test
-    void should_go_to_0_1_N_when_execute_command_N_given_0_0_N() {
+    void should_go_to_0_1_N_when_execute_command_M_given_0_0_N() {
         //given
         MarsRover marsRover=new MarsRover(0,0,"N");
         //when
@@ -38,6 +38,18 @@ class MarsRoverTest {
         assertEquals(0,marsRover.getLocationX());
         assertEquals(0,marsRover.getLocationY());
         assertEquals("E",marsRover.getDirection());
+    }
+
+    @Test
+    void should_go_to_0_minus1_S_when_execute_command_M_given_0_0_S() {
+        //given
+        MarsRover marsRover=new MarsRover(0,0,"S");
+        //when
+        marsRover.ExecuteSingleCommand("M");
+        //then
+        assertEquals(0,marsRover.getLocationX());
+        assertEquals(-1,marsRover.getLocationY());
+        assertEquals("S",marsRover.getDirection());
     }
     
 }
