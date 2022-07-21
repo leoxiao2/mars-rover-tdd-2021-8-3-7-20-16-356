@@ -13,7 +13,7 @@ class MarsRoverTest {
         //given
         MarsRover marsRover = new MarsRover(0, 0, "N");
         //when
-        marsRover.ExecuteSingleCommand("M");
+        marsRover.ExecuteCommands("M");
         //then
         assertEquals(0, marsRover.getLocationX());
         assertEquals(1, marsRover.getLocationY());
@@ -25,7 +25,7 @@ class MarsRoverTest {
         //given
         MarsRover marsRover = new MarsRover(0, 0, "N");
         //when
-        marsRover.ExecuteSingleCommand("L");
+        marsRover.ExecuteCommands("L");
         //then
         assertEquals(0, marsRover.getLocationX());
         assertEquals(0, marsRover.getLocationY());
@@ -37,7 +37,7 @@ class MarsRoverTest {
         //given
         MarsRover marsRover = new MarsRover(0, 0, "N");
         //when
-        marsRover.ExecuteSingleCommand("R");
+        marsRover.ExecuteCommands("R");
         //then
         assertEquals(0, marsRover.getLocationX());
         assertEquals(0, marsRover.getLocationY());
@@ -49,7 +49,7 @@ class MarsRoverTest {
         //given
         MarsRover marsRover = new MarsRover(0, 0, "S");
         //when
-        marsRover.ExecuteSingleCommand("M");
+        marsRover.ExecuteCommands("M");
         //then
         assertEquals(0, marsRover.getLocationX());
         assertEquals(-1, marsRover.getLocationY());
@@ -61,7 +61,7 @@ class MarsRoverTest {
         //given
         MarsRover marsRover = new MarsRover(0, 0, "S");
         //when
-        marsRover.ExecuteSingleCommand("L");
+        marsRover.ExecuteCommands("L");
         //then
         assertEquals(0, marsRover.getLocationX());
         assertEquals(0, marsRover.getLocationY());
@@ -73,7 +73,7 @@ class MarsRoverTest {
         //given
         MarsRover marsRover = new MarsRover(0, 0, "S");
         //when
-        marsRover.ExecuteSingleCommand("R");
+        marsRover.ExecuteCommands("R");
         //then
         assertEquals(0, marsRover.getLocationX());
         assertEquals(0, marsRover.getLocationY());
@@ -85,7 +85,7 @@ class MarsRoverTest {
         //given
         MarsRover marsRover = new MarsRover(0, 0, "E");
         //when
-        marsRover.ExecuteSingleCommand("M");
+        marsRover.ExecuteCommands("M");
         //then
         assertEquals(1, marsRover.getLocationX());
         assertEquals(0, marsRover.getLocationY());
@@ -97,7 +97,7 @@ class MarsRoverTest {
         //given
         MarsRover marsRover = new MarsRover(0, 0, "E");
         //when
-        marsRover.ExecuteSingleCommand("L");
+        marsRover.ExecuteCommands("L");
         //then
         assertEquals(0, marsRover.getLocationX());
         assertEquals(0, marsRover.getLocationY());
@@ -109,7 +109,7 @@ class MarsRoverTest {
         //given
         MarsRover marsRover = new MarsRover(0, 0, "E");
         //when
-        marsRover.ExecuteSingleCommand("R");
+        marsRover.ExecuteCommands("R");
         //then
         assertEquals(0, marsRover.getLocationX());
         assertEquals(0, marsRover.getLocationY());
@@ -121,7 +121,7 @@ class MarsRoverTest {
         //given
         MarsRover marsRover = new MarsRover(0, 0, "W");
         //when
-        marsRover.ExecuteSingleCommand("M");
+        marsRover.ExecuteCommands("M");
         //then
         assertEquals(-1, marsRover.getLocationX());
         assertEquals(0, marsRover.getLocationY());
@@ -133,7 +133,7 @@ class MarsRoverTest {
         //given
         MarsRover marsRover = new MarsRover(0, 0, "W");
         //when
-        marsRover.ExecuteSingleCommand("L");
+        marsRover.ExecuteCommands("L");
         //then
         assertEquals(0, marsRover.getLocationX());
         assertEquals(0, marsRover.getLocationY());
@@ -145,7 +145,7 @@ class MarsRoverTest {
         //given
         MarsRover marsRover = new MarsRover(0, 0, "W");
         //when
-        marsRover.ExecuteSingleCommand("R");
+        marsRover.ExecuteCommands("R");
         //then
         assertEquals(0, marsRover.getLocationX());
         assertEquals(0, marsRover.getLocationY());
