@@ -35,6 +35,9 @@ public class MarsRover {
         if(direction.equals("N")){
             direction="W";
         }
+        else if(direction.equals("S")){
+            direction="E";
+        }
     }
 
     public void ExecuteCommands(List<String> commands){
